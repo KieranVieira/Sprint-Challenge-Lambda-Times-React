@@ -25,6 +25,8 @@ const LoginScreen = styled.div`
     .login-section{
         display: flex;
         flex-direction: column;
+        align-items:center;
+        align-content:center;
         width: 100vw;
         height: 60vh;
         background-color: white;   
@@ -35,7 +37,7 @@ const LoginScreen = styled.div`
         form{
             display: flex;
             flex-direction: column;
-            width: 450px;
+            width: 400px;
             margin: 0 auto;
             padding-bottom: 15px;
             border-bottom: 1px solid lightgray;
@@ -61,6 +63,9 @@ const LoginScreen = styled.div`
                 font-size: 1rem;
                 font-weight: 500;
                 color: ${props => props.color};
+            }
+            .register-link{
+                color: #4591e0
             }
             i{
                 color: white;
@@ -124,7 +129,7 @@ class Login extends React.Component{
                             <i className="fab fa-google-plus-g" />
                         </div>
                         <h2 color="grey">DON'T HAVE AN ACCOUNT?</h2>
-                        <h2 color="#4591e0">REGISTER</h2>
+                        <h2 className="register-link">REGISTER</h2>
                     </div>
                 </div>
             </LoginScreen>
